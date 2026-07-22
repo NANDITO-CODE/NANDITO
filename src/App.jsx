@@ -200,8 +200,8 @@ function RoutesScene() {
       </div>
       <div className="route-gallery">
         {slots.map(({ photo, index }, slot) => (
-          <figure className={`route-photo route-photo-${slot + 1}`} key={`${photo.src}-${tick}-${slot}`}>
-            <img src={photo.src} alt="" loading={slot === 0 ? 'eager' : 'lazy'} />
+          <figure className={`route-photo route-photo-${slot + 1}`} key={photo.src}>
+            <img src={photo.src} alt="" loading="eager" decoding="async" />
             <figcaption><span>{String(index + 1).padStart(2, '0')}</span></figcaption>
           </figure>
         ))}
