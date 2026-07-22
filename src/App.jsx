@@ -189,7 +189,6 @@ function RoutesScene() {
     const index = (tick + slot) % photos.length
     return { photo: photos[index], index }
   })
-  const reduceMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   return (
     <section className="scene scene-routes" aria-labelledby="routes-title">
@@ -206,7 +205,6 @@ function RoutesScene() {
           </figure>
         ))}
       </div>
-      <p className="photo-note">{reduceMotion ? 'Bitácora visual · 11 viajes en moto' : 'Bitácora visual · 11 viajes en moto, rotando cada 3 segundos'}</p>
     </section>
   )
 }
