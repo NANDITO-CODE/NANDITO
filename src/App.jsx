@@ -17,18 +17,19 @@ const projects = [
   { code: 'DESK', title: 'Software de escritorio', meta: 'Procesos · Gestión · QA' },
 ]
 
+const base = import.meta.env.BASE_URL
 const photos = [
-  { src: '/routes/01.jpg' },
-  { src: '/routes/02.jpg' },
-  { src: '/routes/03.jpg' },
-  { src: '/routes/04.jpg' },
-  { src: '/routes/05.jpg' },
-  { src: '/routes/06.jpg' },
-  { src: '/routes/07.jpg' },
-  { src: '/routes/08.jpg' },
-  { src: '/routes/09.jpg' },
-  { src: '/routes/10.jpg' },
-  { src: '/routes/11.jpg' },
+  { src: `${base}routes/01.jpg` },
+  { src: `${base}routes/02.jpg` },
+  { src: `${base}routes/03.jpg` },
+  { src: `${base}routes/04.jpg` },
+  { src: `${base}routes/05.jpg` },
+  { src: `${base}routes/06.jpg` },
+  { src: `${base}routes/07.jpg` },
+  { src: `${base}routes/08.jpg` },
+  { src: `${base}routes/09.jpg` },
+  { src: `${base}routes/10.jpg` },
+  { src: `${base}routes/11.jpg` },
 ]
 
 const SLOT_COUNT = 3
